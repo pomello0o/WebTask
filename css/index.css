@@ -1,25 +1,87 @@
-html {
-    background-color: rgb(143, 143, 212);
+body {
+    margin: 0;
+    background-color: white;
 }
 
-body {
+.content-container {
     width: 60%;
     padding: 0 15px;
     margin: 0 auto;
     background-color: rgb(164, 196, 224);
 }
 
-p::first-letter {
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(37, 108, 201);
+}
+
+.nav-item {
+    display: flex;
+    width: 10%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgb(14, 83, 122);
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+.nav-item:hover {
+    background-color: rgb(164, 196, 224);
+}
+
+.nav-item:last-child {
+    border-right: 2px solid rgb(14, 83, 122);
+}
+
+.dropdown {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin-top: 160px;
+    z-index: 1;
+    font-size: 14px;
+    background-color: rgb(166, 166, 228);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    margin: 0;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(96, 96, 187);
+}
+
+.dropdown-item-text {
+    text-decoration: none;
+    color: black;
+}
+
+.main-paragraph::first-letter {
     font-size: 25px;
 }
 
-p {
+.main-paragraph {
     text-indent: 20px;
     text-align: justify;
-}
-
-.main-content-section {
-    margin-top: 50px;
 }
 
 .main-img {
@@ -33,6 +95,8 @@ p {
 }
 
 .main-title {
+    margin: 0 0 30px;
+    padding-top: 20px;
     text-align: center;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -47,7 +111,7 @@ p {
 }
 
 .footer-breaker {
-    margin: 30px 0 10px;
+    margin: 0 0 10px;
     height: 7px;
     background-color: rgb(6, 78, 6);
     border: none;
@@ -60,5 +124,6 @@ p {
 }
 
 .footer-c {
-    margin-left: 80%;
+    margin-left: 85%;
+    font-size: 20px;
 }
