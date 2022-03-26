@@ -6,30 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chelsea FC</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="nav-item">Main</a>
+            <img src="img/chelsea-logo.png" class="nav-logo">
 
-            <div class="nav-item dropdown">
-                <span>Matches</span>
-                <div class="dropdown-content">
-                    <p class="dropdown-item"><a href="index.html" class="dropdown-item-text">Calendar of mathes</a></p>
-                    <p class="dropdown-item"><a href="index.html" class="dropdown-item-text">Next game</a></p>
-                    <p class="dropdown-item"><a href="index.html" class="dropdown-item-text">Ratings</a></p>
+            <ul>
+                <li><a href="index.html" class="nav-item">Main</a></li>
+
+                <div class="nav-item dropdown">
+                    <span>Matches</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="dropdown-item"><a href="index.html" class="dropdown-item-text">Calendar of mathes</a></li>
+                            <li class="dropdown-item"><a href="index.html" class="dropdown-item-text">Next game</a></li>
+                            <li class="dropdown-item"><a href="index.html" class="dropdown-item-text">Ratings</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <a href="index.html" class="nav-item">News</a>
+                <li><a href="index.html" class="nav-item">News</a></li>
+                <li><a href="index.html" class="nav-item">Fans</a></li>
+                <li><a href="index.html" class="nav-item">Contacts</a></li>
+                <li><a href="index.html" class="nav-item">Admin</a></li>
+            </ul>
 
-            <a href="index.html" class="nav-item">Fans</a>
-
-            <a href="index.html" class="nav-item">Contacts</a>
-
-            <a href="index.html" class="nav-item">Admin</a>
+            <img src="img/chelsea-logo.png" class="nav-logo">
         </nav>
     </header>
 
@@ -112,30 +119,41 @@
             </p>
 
             <div class="content-media-center">
-                <img src="img/first-ucl-win.jpg" alt="Chelsea UCL 2021 winning moment" class="first-ucl-win">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/RdvFxQvMY-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <a href="https://www.youtube.com/watch?v=lBP7QQYN1IU" target="_blank" class="highlights-link">
-                <p class="highlights-text">Highlights</p>
-            </a>
         </section>
 
     </main>
 
     <hr class="footer-breaker">
 
-    <footer>
-        <section class="footer">
-            <a href="https://www.instagram.com/chelseafc/" target="_blank">
-                <img src="img/instagram.png" alt='instagram logo' class="footer-img">
-            </a>
+    <footer class="footer">
+        <section class="footer-section grid">
+            <div class="copyright">
+                <h1>Chelsea FC</h1>
+                <p>&copy; Myroslav Trynoha, 2022</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/chelseafc/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-3x"></i>
+                </a>
 
-            <a href="https://twitter.com/ChelseaFC" target="_blank">
-                <img src="img/twitter.png" alt='twitter logo' class="footer-img">
-            </a>
+                <a href="https://twitter.com/ChelseaFC" target="_blank">
+                    <i class="fa-brands fa-twitter fa-3x"></i>
+                </a>
 
-            <a href="https://www.facebook.com/ChelseaFC" target="_blank">
-                <img src="img/facebook.png" alt='facebook logo' class="footer-img">
-            </a>
+                <a href="https://www.facebook.com/ChelseaFC" target="_blank">
+                    <i class="fa-brands fa-facebook fa-3x"></i>
+                </a>
+
+                <a href="https://www.youtube.com/chelseatv" target="_blank">
+                    <i class="fa-brands fa-youtube fa-3x"></i>
+                </a>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.7193105100996!2d-0.19314518407264405!3d51.481666320405125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford%20Bridge!5e0!3m2!1sen!2sua!4v1648110116399!5m2!1sen!2sua"
+                    width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </section>
     </footer>
 </body>

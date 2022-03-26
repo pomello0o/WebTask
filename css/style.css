@@ -3,6 +3,11 @@ body {
     background-color: white;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
 .content-container {
     width: 70%;
     padding: 20px 15px 0;
@@ -16,16 +21,21 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(37, 108, 201);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0 40px;
 }
 
 .nav-item {
     display: flex;
-    width: 11.83%;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid rgb(14, 83, 122);
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -36,8 +46,9 @@ body {
     background-color: rgb(164, 196, 224);
 }
 
-.nav-item:last-child {
-    border-right: 2px solid rgb(14, 83, 122);
+.nav-logo {
+    width: 60px;
+    height: 60px;
 }
 
 .dropdown {
@@ -46,21 +57,26 @@ body {
     cursor: pointer;
 }
 
+.dropdown ul {
+    flex-direction: column;
+    padding: 0;
+}
+
 .dropdown-content {
-    display: none;
+    visibility: hidden;
     position: absolute;
     background-color: #f9f9f9;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 0;
-    margin-top: 160px;
+    margin-top: 195px;
     z-index: 1;
     font-size: 14px;
     background-color: rgb(166, 166, 228);
 }
 
 .dropdown:hover .dropdown-content {
-    display: inline-block;
+    visibility: visible;
 }
 
 .dropdown-item {
@@ -119,7 +135,7 @@ body {
 }
 
 .content-media-left {
-    margin: 0 40px 40px 0;
+    margin-right: 40px;
     width: 40%;
     float: left;
     text-align: center;
@@ -151,7 +167,7 @@ body {
 .content-media-center {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    padding: 30px 0;
 }
 
 .first-ucl-win {
@@ -178,28 +194,41 @@ body {
 }
 
 .footer-breaker {
-    margin: 0 0 10px;
+    margin: 0;
     height: 7px;
-    background-color: rgb(6, 78, 6);
+    background-color: rgb(7, 12, 83);
     border: none;
 }
 
 .footer {
     padding-bottom: 10px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    height: 250px;
+    background-color: rgb(37, 108, 201);
+    color: #fff;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.footer-img {
-    width: 40px;
-    height: 40px;
+.social a {
+    text-decoration: none;
+}
+
+.fa-brands {
     margin-left: 50px;
-    background-color: white;
+    background-color: transparent;
     transition: transform 0.5s;
+    color: #fff;
 }
 
-.footer-img:hover {
+.fa-brands:hover {
     transform: scale(1.35);
 }
