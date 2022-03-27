@@ -1,0 +1,197 @@
+p {
+    margin: 0;
+}
+
+.divider {
+    border: none;
+    background-color: rgb(37, 108, 201);
+    height: 4px;
+}
+
+.calendar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.match {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(37, 108, 201);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tournament {
+    margin: 0;
+    padding: 10px 20px 20px;
+}
+
+.teams {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+}
+
+.team {
+    margin: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    height: 44px;
+}
+
+.match-team-logo {
+    width: 35px;
+    height: 35px;
+    padding: 2.5px 5px;
+}
+
+.team-name {
+    margin: 0;
+    padding: 10px;
+}
+
+.home-team {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.away-team {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.match-info {
+    background-color: rgb(181, 200, 235);
+    color: #000;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.next-match {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.next-match-time {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.next-match-team-logo {
+    height: 250px;
+}
+
+.next-match-separator {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.next-match-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.next-match-info {
+    width: 80%;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.next-match-info h3 {
+    margin: 0;
+}
+
+.match-odd {
+    padding: 5px;
+    border: #fff 1px solid;
+    color: #fff;
+    width: 5%;
+    text-align: center;
+    background-color: rgb(37, 108, 201);
+    transition: background-color 0.5s;
+}
+
+.match-odd:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.stadium-icon {
+    height: 20px;
+    padding: 0 5px;
+}
+
+.previous-matches {
+    width: 57%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.previous-match {
+    width: 300px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(37, 108, 201);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-cell {
+    width: 50px;
+}
+
+.title-cell {
+    text-align: left;
+}
+
+.score-cell {
+    width: 20px;
+    text-align: right;
+}
+
+.previous-match-tournament {
+    font-size: 20px;
+}
+
+.best-players {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.best-players h2 {
+    margin-top: 0;
+}
+
+.best {
+    border-radius: 5px;
+    background-color: rgb(37, 108, 201);
+    color: #fff;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.best th {
+    padding: 20px 10px;
+}
+
+.best td {
+    padding: 5px 10px;
+}

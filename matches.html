@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea FC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/matches.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/chelsea-logo.png" class="nav-logo">
+
+            <ul>
+                <li><a href="index.html" class="nav-item">Main</a></li>
+
+                <div class="nav-item dropdown">
+                    <span>Matches</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="dropdown-item"><a href="matches.html" class="dropdown-item-text">Calendar of mathes</a></li>
+                            <li class="dropdown-item"><a href="matches.html#next-match" class="dropdown-item-text">Next game</a></li>
+                            <li class="dropdown-item"><a href="matches.html#best-players" class="dropdown-item-text">Best Players</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <li><a href="index.html" class="nav-item">News</a></li>
+                <li><a href="index.html" class="nav-item">Fans</a></li>
+                <li><a href="index.html" class="nav-item">Contacts</a></li>
+                <li><a href="index.html" class="nav-item">Admin</a></li>
+            </ul>
+
+            <img src="img/chelsea-logo.png" class="nav-logo">
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section class="calendar-section">
+            <h1 class="main-title">Calendar of Matches</h1>
+
+            <div class="match">
+                <div class="match-main">
+                    <h3 class="tournament">
+                        English Premier League
+                    </h3>
+                    <div class="teams">
+                        <div class="team home-team">
+                            <p class="team-name">Chelsea</p>
+                            <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                        </div>
+                        <div class="match-info">
+                            <p>17:00</p>
+                            <p>02.04</p>
+                        </div>
+                        <div class="team away-team">
+                            <img src="img/brentford-logo.png" alt="Brentford logo" class="match-team-logo">
+                            <p class="team-name">Brentford</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-add">
+
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match-main">
+                    <h3 class="tournament">
+                        UEFA Champions League
+                    </h3>
+                    <div class="teams">
+                        <div class="team home-team">
+                            <p class="team-name">Chelsea</p>
+                            <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                        </div>
+                        <div class="match-info">
+                            <p>22:00</p>
+                            <p>06.04</p>
+                        </div>
+                        <div class="team away-team">
+                            <img src="img/real-logo.png" alt="Real Madrid logo" class="match-team-logo">
+                            <p class="team-name">Real Madrid</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-add">
+
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match-main">
+                    <h3 class="tournament">
+                        English Premier League
+                    </h3>
+                    <div class="teams">
+                        <div class="team home-team">
+                            <p class="team-name">Southampton</p>
+                            <img src="img/southampton-logo.png" alt="Southampton logo" class="match-team-logo">
+                        </div>
+                        <div class="match-info">
+                            <p>17:00</p>
+                            <p>09.04</p>
+                        </div>
+                        <div class="team away-team">
+                            <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                            <p class="team-name">Chelsea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-add">
+
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match-main">
+                    <h3 class="tournament">
+                        UEFA Champions League
+                    </h3>
+                    <div class="teams">
+                        <div class="team home-team">
+                            <p class="team-name">Real Madrid</p>
+                            <img src="img/real-logo.png" alt="Real Madrid logo" class="match-team-logo">
+                        </div>
+                        <div class="match-info">
+                            <p>22:00</p>
+                            <p>12.04</p>
+                        </div>
+                        <div class="team away-team">
+                            <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                            <p class="team-name">Chelsea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match-add">
+
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <span id="next-match"></span>
+        <section class="next-match-section">
+            <h1 class="main-title">Next Match</h1>
+            <p class="next-match-time">22.04.2022 17:00</p>
+            <div class="next-match">
+                <div class="next-match-team">
+                    <img src="img/chelsea-logo.png" alt="Chelsea logo" class="next-match-team-logo">
+                    <h2>Chelsea</h2>
+                </div>
+                <div class="next-match-separator">
+                    <p>-</p>
+                </div>
+                <div class="next-match-team">
+                    <img src="img/brentford-logo.png" alt="Brentford logo" class="next-match-team-logo">
+                    <h2>Brentford</h2>
+                </div>
+            </div>
+            <div class="next-match-info">
+                <p class="match-odd">1.34</p>
+                <p class="match-odd">5.25</p>
+                <p class="match-odd">10.50</p>
+            </div>
+            <div class="next-match-info">
+                <h3>Tournament: English Premier League</h3>
+            </div>
+            <div class="next-match-info">
+                <img src="img/stadium.png" alt="Stadium icon" class="stadium-icon">
+                <h3>Stadium: Stamford Bridge, London</h3>
+            </div>
+            <h2 class="next-match-title">Previous Matches</h2>
+            <div class="previous-matches">
+                <div class="home-previous">
+                    <table class="previous-match" id="previous-match-1">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                FA Cup
+                            </th>
+                            <th>
+                                19.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/midle-logo.png" alt="Middlesbrough logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Middlesbrough
+                            </td>
+                            <td class="score-cell">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Chelsea
+                            </td>
+                            <td class="score-cell">
+                                2
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="previous-match">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                UCL
+                            </th>
+                            <th>
+                                16.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/lille-logo.png" alt="Lille logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Lille
+                            </td>
+                            <td class="score-cell">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Chelsea
+                            </td>
+                            <td class="score-cell">
+                                2
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="previous-match">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                EPL
+                            </th>
+                            <th>
+                                13.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/chelsea-logo.png" alt="Chelsea logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Chelsea
+                            </td>
+                            <td class="score-cell">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/newcastle-logo.png" alt="Newcastlelogo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Newcastle United
+                            </td>
+                            <td class="score-cell">
+                                0
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="away-previous ">
+                    <table class="previous-match">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                EPL
+                            </th>
+                            <th>
+                                20.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/leicester-logo.png" alt="Leicester logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Leicester
+                            </td>
+                            <td class="score-cell">
+                                2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/brentford-logo.png" alt="Brentford logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Brentford
+                            </td>
+                            <td class="score-cell">
+                                1
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="previous-match">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                EPL
+                            </th>
+                            <th>
+                                12.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/brentford-logo.png" alt="Brentford logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Brentford
+                            </td>
+                            <td class="score-cell">
+                                2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/burnley-logo.png" alt="Burnley logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Burnley
+                            </td>
+                            <td class="score-cell">
+                                0
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="previous-match">
+                        <tr class="previous-match-tournament">
+                            <th colspan="2">
+                                EPL
+                            </th>
+                            <th>
+                                05.03
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/norwich-logo.png" alt="Norwich logo" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Norwich
+                            </td>
+                            <td class="score-cell">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="logo-cell">
+                                <img src="img/brentford-logo.png" alt="Brentford" class="match-team-logo">
+                            </td>
+                            <td class="title-cell">
+                                Brentford
+                            </td>
+                            <td class="score-cell">
+                                3
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <section id="best-players">
+            <h1 class="main-title">Best Players</h1>
+            <div class="best-players">
+                <div class="most-goals">
+                    <h2>Best scorers</h2>
+                    <table class="best best-scorers">
+                        <tr>
+                            <th>#</th>
+                            <th>Player</th>
+                            <th><i class="fa-solid fa-futbol"></i></th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Kai Havertz</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Jorginho</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Mason Mount</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Timo Werner</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Hakim Ziyech</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="most-assists">
+                    <h2>Best assistents</h2>
+                    <table class="best best-assistents">
+                        <tr>
+                            <th>#</th>
+                            <th>Player</th>
+                            <th>A</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Mason Mount</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Reece James</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Hakim Ziyech</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Callum Hudson-Odoi</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Mateo Kovacic</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer ">
+        <section class="footer-section grid ">
+            <div class="copyright ">
+                <h1>Chelsea FC</h1>
+                <p>&copy; Myroslav Trynoha, 2022</p>
+            </div>
+            <div class="social ">
+                <a href="https://www.instagram.com/chelseafc/ " target="_blank ">
+                    <i class="fa-brands fa-instagram fa-3x "></i>
+                </a>
+
+                <a href="https://twitter.com/ChelseaFC " target="_blank ">
+                    <i class="fa-brands fa-twitter fa-3x "></i>
+                </a>
+
+                <a href="https://www.facebook.com/ChelseaFC " target="_blank ">
+                    <i class="fa-brands fa-facebook fa-3x "></i>
+                </a>
+
+                <a href="https://www.youtube.com/chelseatv " target="_blank ">
+                    <i class="fa-brands fa-youtube fa-3x "></i>
+                </a>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.7193105100996!2d-0.19314518407264405!3d51.481666320405125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford%20Bridge!5e0!3m2!1sen!2sua!4v1648110116399!5m2!1sen!2sua "
+                    width="500 " height="200 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
