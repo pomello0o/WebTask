@@ -1,0 +1,32 @@
+h1:first-child {
+    padding-top: 10%;
+}
+
+.news {
+    flex-wrap: wrap;
+}
+
+.news-block {
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(127, 204, 255);
+    height: 650px;
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.img-block {
+    height: 40%;
+}
+
+.news-title {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}

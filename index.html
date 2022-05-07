@@ -6,54 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chelsea FC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <img src="img/chelsea-logo.png" class="nav-logo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-md mt-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <span class="nav-title-collapsed">Chelsea FC</span>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <img src="img/chelsea-logo.png" class="nav-logo left-logo">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Main</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Matches
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="matches.html">Calendar of matches</a></li>
+                                <li><a class="dropdown-item" href="matches.html#next-match">Next match</a></li>
+                                <li><a class="dropdown-item" href="matches.html#best-players">Best players</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fans.html">Fans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </li>
+                        <main class="content-container">
+                    </ul>
 
-            <ul>
-                <li><a href="index.html" class="nav-item">Main</a></li>
-
-                <div class="nav-item dropdown">
-                    <span>Matches</span>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li class="dropdown-item"><a href="matches.html" class="dropdown-item-text">Calendar of mathes</a></li>
-                            <li class="dropdown-item"><a href="matches.html#next-match" class="dropdown-item-text">Next game</a></li>
-                            <li class="dropdown-item"><a href="matches.html#best-players" class="dropdown-item-text">Best Players</a></li>
-                        </ul>
-                    </div>
+                    <img src="img/chelsea-logo.png" class="nav-logo right-logo">
                 </div>
-
-                <li><a href="index.html" class="nav-item">News</a></li>
-                <li><a href="index.html" class="nav-item">Fans</a></li>
-                <li><a href="index.html" class="nav-item">Contacts</a></li>
-                <li><a href="index.html" class="nav-item">Admin</a></li>
-            </ul>
-
-            <img src="img/chelsea-logo.png" class="nav-logo">
+            </div>
         </nav>
     </header>
 
-    <main class="content-container">
-
+    <main class="container-xl content-container">
         <section class="title-section">
-            <h1 class="main-title">Chelsea - The Pride of London</h1>
-            <div class="logos-section">
-                <img src="img/chelsea-oldest-logo.png" alt="One of first Chelsea logos" class="main-logo" id="oldest-logo">
-                <img src="img/chelsea-old-logo.png" alt="Previous Chelsea logo" class="main-logo" id="old-logo">
-                <img src="img/chelsea-logo.png" alt="Current Chelsea logo" class="main-logo" id="new-logo">
+            <h1 class="text-center">Chelsea - The Pride of London</h1>
+            <div>
+                <img src="img/chelsea-oldest-logo.png" alt="One of first Chelsea logos" class="main-logo img-fluid">
+                <img src="img/chelsea-old-logo.png" alt="Previous Chelsea logo" class="main-logo img-fluid">
+                <img src="img/chelsea-logo.png" alt="Current Chelsea logo" class="main-logo img-fluid new-logo">
             </div>
-            <h4 class="img-signature">Chelsea logo through the time</h4>
+            <p class="h4 text-center logos-sign">Chelsea logo through the time</p>
         </section>
 
-        <section>
-            <h2 class="main-header">History</h2>
+        <section class="text-content">
+            <h2 class="text-center">History</h2>
 
             <p class="main-paragraph">
                 Chelsea was founded in 1905 by Gus Mears, an English businessman who had earlier bought the Stamford Bridge athletics stadium with the plan of transforming it into a football ground. His original idea was to rent it to an existing club, but after a deal
@@ -61,8 +80,8 @@
             </p>
 
             <div class="content-media-left">
-                <img src="img/first-team.jpg" alt="Chelsea squad in 1947" class="content-media">
-                <h4 class="img-signature">Chelsea squad in 1947</h4>
+                <img src="img/first-team.jpg" alt="Chelsea squad in 1947" class="img-fluid">
+                <p class="h4 text-center">Chelsea squad in 1947</p>
             </div>
 
             <p class="main-paragraph">
@@ -78,8 +97,8 @@
             </p>
 
             <div class="content-media-right">
-                <img src="img/ucl-win.jpg" alt="Chelsea UCL 2021 winning moment" class="content-media">
-                <h4 class="img-signature">Chelsea UCL 2021 winning moment</h4>
+                <img src="img/ucl-win.jpg" alt="Chelsea UCL 2021 winning moment" class="img-fluid">
+                <p class="h4 text-center">Chelsea UCL 2021 winning moment</p>
             </div>
 
             <p class="main-paragraph">
@@ -95,8 +114,8 @@
             </p>
         </section>
 
-        <section>
-            <h2 class="main-header">First UCL Title</h2>
+        <section class="text-content">
+            <h2 class="text-center">First UCL Title</h2>
 
             <p class="main-paragraph">
                 First big Chelsea win in Europe is for sure the Uefa Champions League in 2012. This was a very hard way to trophy for the Blues. Final rival for Chelsea was one of the strongest teams in the world - Bayer Munich. Despite their strength Bayern players
@@ -119,21 +138,20 @@
             </p>
 
             <div class="content-media-center">
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/RdvFxQvMY-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/RdvFxQvMY-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ucl-vid"></iframe>
             </div>
         </section>
-
     </main>
 
     <hr class="footer-breaker">
 
     <footer class="footer">
-        <section class="footer-section grid">
-            <div class="copyright">
+        <section class="footer-section row">
+            <div class="copyright col-sm">
                 <h1>Chelsea FC</h1>
                 <p>&copy; Myroslav Trynoha, 2022</p>
             </div>
-            <div class="social">
+            <div class="social col-sm">
                 <a href="https://www.instagram.com/chelseafc/" target="_blank">
                     <i class="fa-brands fa-instagram fa-3x"></i>
                 </a>
@@ -150,9 +168,9 @@
                     <i class="fa-brands fa-youtube fa-3x"></i>
                 </a>
             </div>
-            <div>
+            <div class="col-sm">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.7193105100996!2d-0.19314518407264405!3d51.481666320405125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f864b976f3d%3A0x48aa38781ea565f8!2sStamford%20Bridge!5e0!3m2!1sen!2sua!4v1648110116399!5m2!1sen!2sua"
-                    width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
             </div>
         </section>
     </footer>
